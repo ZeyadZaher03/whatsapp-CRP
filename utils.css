@@ -1,0 +1,76 @@
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-box label {
+  font-size: 16px;
+  color: #275e2c;
+}
+
+.input-box input {
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px solid #e0e5f2;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-d-c {
+  flex-direction: column;
+}
+
+.flex-d-r {
+  flex-direction: row;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.remember-me-box {
+  display: flex;
+  gap: 10px;
+  color: #7a86a1;
+}
+
+.forgot-password-link {
+  font-size: 16px;
+  color: #32363b;
+  text-decoration: none;
+}
+
+.big-button {
+  width: 100%;
+  border-radius: 10px;
+  border: 0;
+  padding: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.google-button {
+  background-color: #e6f8e7;
+  color: #275e2c;
+}
+
+.code-input-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.code-input-box input {
+  width: 100%;
+  border-radius: 10px;
+  height: 55px;
+  border: 1px solid #e0e5f2;
+}
