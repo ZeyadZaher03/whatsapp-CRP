@@ -74,3 +74,8 @@
   height: 55px;
   border: 1px solid #e0e5f2;
 }
+
+.transparent-button {
+  border: 0;
+  background-color: transparent;
+}

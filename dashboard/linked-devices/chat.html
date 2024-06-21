@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../index.css" />
+    <link rel="stylesheet" href="./../../utils.css" />
+    <link rel="stylesheet" href="./../dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://emoji-button.js.org/1.0.4/emoji-button.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="dashboard">
+    <nav class="dashboard-navigation">
+      <img src="./../../assets/whatsapp.png" alt="whatsapp" />
+      <ul>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/1.png" alt="" />
+          <span>الرئيسية</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/2.png" alt="" />
+          <span>الباقات</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/3.png" alt="" />
+          <span>الاجهزة المرتبطة</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/4.png" alt="" />
+          <span>جهات الاتصال</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/5.png" alt="" />
+          <span>المجموعات</span>
+        </a>
+        <a class="dashboard-navigation--link dashboard-navigation--link-active">
+          <img src="/assets/dashboard-nav-icons/6-i.png" alt="" />
+          <span>الشات بوت</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/7.png" alt="" />
+          <span>الرسائل المجدولة</span>
+        </a>
+      </ul>
+    </nav>
+    <main class="dashboard-main">
+      <div class="side-bar">
+        <button type="button">
+          <img src="./../../assets/side-bar/1.png" alt="" />
+        </button>
+        <button type="button">
+          <img src="./../../assets/side-bar/2.png" alt="" />
+        </button>
+        <button type="button">
+          <img src="./../../assets/side-bar/3.png" alt="" />
+        </button>
+        <button type="button">
+          <img src="./../../assets/side-bar/4.png" alt="" />
+        </button>
+      </div>
+      <div class="chat-tray">
+        <div class="chat-tray_actions">
+          <button class="chat-tray_action--filters">الكل</button>
+          <button class="chat-tray_action--filters">غير مقروء</button>
+          <button class="chat-tray_action--filters">مجموعات</button>
+          <button class="chat-tray_action--buttons transparent-button">
+            <img src="./../../assets/chat-tray-actions/new-chat.png" alt="" />
+          </button>
+          <button class="chat-tray_action--buttons transparent-button">
+            <img src="./../../assets/chat-tray-actions/menu.png" alt="" />
+          </button>
+        </div>
+        <div class="chat-tray_search-container">
+          <input type="text" class="chat-tray_search" placeholder="بحث..." />
+          <button class="transparent-button">
+            <img src="./../../assets/chat-tray-actions/filter.png" alt="" />
+          </button>
+        </div>
+        <div class="chat-tray_chats">
+          <div class="chat-tray_chat">
+            <div class="chat-tray_chat--info">
+              <div class="chat-tray_chat--info_image">
+                <img src="./../../assets/avatar.png" alt="whatsapp" />
+              </div>
+              <div class="chat-tray_chat--data">
+                <span class="chat-tray_chat--name">خالد محمد</span>
+                <span class="chat-tray_chat--message">كيف الحال</span>
+              </div>
+            </div>
+            <div class="chat-tray_chat--date">
+              <span>الاثنين</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-wrapper">
+        <div class="chat-wrapper--header">
+          <div class="chat-wrapper--header--info">
+            <div class="chat-wrapper--header-image">
+              <img src="./../../assets/avatar.png" alt="whatsapp" />
+            </div>
+            <span>خالد محمد</span>
+          </div>
+          <div class="chat-wrapper--header--actions">
+            <button class="transparent-button" id="file-header-button">
+              <img src="./../../assets/chat-header/files.png" alt="" />
+            </button>
+            <button class="transparent-button" id="notes-header-button">
+              <img src="./../../assets/chat-header/notes.png" alt="" />
+            </button>
+            <button class="transparent-button" id="menu-header-button">
+              <img src="./../../assets/chat-header/menu.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="chat-container">
+          <div class="chat-message received">
+            <div class="message-content">
+              <span>مرحبا كيف الحال؟</span>
+              <div class="message-time">10:00 AM</div>
+            </div>
+          </div>
+          <div class="chat-message sent">
+            <div class="message-content">
+              <span>الحمد لله، كيف حالك أنت؟</span>
+              <div class="message-time">10:02 AM</div>
+              <div class="message-status sent">✓</div>
+            </div>
+          </div>
+          <div class="chat-message sent">
+            <div class="message-content">
+              <span>أنا بخير، شكرًا لك!</span>
+              <div class="message-time">10:03 AM</div>
+              <div class="message-status delivered">✓✓</div>
+            </div>
+          </div>
+          <div class="chat-message received">
+            <div class="message-content">
+              <span>هل سنلتقي اليوم؟</span>
+              <div class="message-time">10:04 AM</div>
+            </div>
+          </div>
+          <div class="chat-message sent">
+            <div class="message-content">
+              <span>نعم، في تمام الساعة 5 مساءً.</span>
+              <div class="message-time">10:05 AM</div>
+              <div class="message-status read">✓✓</div>
+            </div>
+          </div>
+        </div>
+        <div class="chat-message-wrapper">
+          <div class="chat-message-wrapper--actions">
+            <button class="transparent-button" id="emoji-button">
+              <img src="./../../assets/chat-message/emojis.png" alt="Emojis" />
+            </button>
+            <button class="transparent-button" id="file-button">
+              <img
+                src="./../../assets/chat-message/add-files.png"
+                alt="Add Files"
+              />
+              <input type="file" id="file-input" style="display: none" />
+            </button>
+          </div>
+          <input type="text" />
+          <button class="voice-note" id="voice-button">
+            <img src="./../../assets/chat-message/mic.png" alt="Microphone" />
+          </button>
+        </div>
+      </div>
+      <div class="side-tray" id="file-tray">
+        <div class="side-tray--header">
+          <span>الملفات المهمه</span>
+          <button id="close-file-tray" class="close-button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="files-content">
+          <button class="add-note-button" id="open-add-file-tray">
+            <i class="fas fa-plus"></i> اضافة ملف جديد
+          </button>
+          <div class="file-item">
+            <div class="file-item--header">
+              <span class="file-item--uploader">خالد محمد</span>
+            </div>
+            <div class="file-item--body">
+              <i class="fas fa-file-alt file-item--icon"></i>
+              <div class="file-item--body-info-wrapper">
+                <div>
+                  <span class="file-item--name">ملف هام</span>
+                  <div class="file-item--info">
+                    <span class="file-item--size">16 كيلوبايت</span>
+                    <span class="file-item--type">dox</span>
+                    <span class="file-item--pages">1 صفحة</span>
+                  </div>
+                </div>
+                <button class="download-button">
+                  <i class="fa-regular fa-circle-down"></i>
+                </button>
+              </div>
+            </div>
+            <div class="file-item--footer">
+              <span class="file-item--date">الثلاثاء</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-tray" id="add-file-tray">
+        <div class="side-tray--header">
+          <span>اضافة ملف</span>
+          <button id="close-add-file-tray" class="close-button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="add-file-content">
+          <label for="upload-file">رفع ملف جديد</label>
+          <div>
+            <label for="upload-file"><i class="fa-solid fa-upload"></i></label>
+            <input type="file" id="upload-file" accept=".doc,.pdf" />
+            <span>قم برفع الملف بصيغة DOC, PDF</span>
+          </div>
+          <button class="add-file-button">رفع ملف</button>
+        </div>
+      </div>
+
+      <div class="side-tray" id="notes-section">
+        <div class="side-tray--header">
+          <span>الملاحظات</span>
+          <button id="close-notes-tray" class="close-button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="notes-content">
+          <button class="add-note-button" id="open-add-note-tray">
+            <i class="fas fa-plus"></i> اضافة ملاحظة جديدة
+          </button>
+          <div class="notes-summary">
+            <span>عدد الملاحظات: 30 ملاحظة</span>
+          </div>
+          <div class="note">
+            <div class="note-header">
+              <div class="note-header--action">
+                <button class="note-header--button">
+                  جعلها مقروءة <i class="fas fa-check-circle"></i>
+                </button>
+              </div>
+              <div class="note-header--info">
+                <div class="note-header--user">
+                  <div class="note-header--user_avatar">
+                    <img src="./../../assets/avatar.png" alt="avatar" />
+                  </div>
+                  <div class="note-header--user_data">
+                    <span class="note-header--user_name">محمد خالد</span>
+                    <span class="note-header--user_role">مدير</span>
+                  </div>
+                </div>
+                <span class="note-header--time">منذ خمس ساعات</span>
+              </div>
+            </div>
+            <div class="note-content">
+              <p>
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربي، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-tray" id="add-note-tray">
+        <div class="side-tray--header">
+          <span>اضافة ملاحظة جديدة</span>
+          <button id="close-add-note-tray" class="close-button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="add-note-content">
+          <label for="note-text">نص الملاحظة</label>
+          <textarea
+            id="note-text"
+            placeholder="قم بكتابة ملاحظتك هنا"
+          ></textarea>
+          <button class="add-note-button">اضافة ملاحظة</button>
+        </div>
+      </div>
+
+      <div class="side-tray" id="menu-tray">
+        <div class="side-tray--header">
+          <span>ملصقات</span>
+          <button id="close-menu-tray" class="close-button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="sticker-content">
+          <button class="add-note-button" id="open-add-sticker-tray">
+            <i class="fas fa-plus"></i> اضافة ملصق جديد
+          </button>
+          <span class="sticker-item"> مشتري جديد </span>
+        </div>
+      </div>
+
+      <div class="side-tray" id="add-sticker-tray">
+        <div class="side-tray--header">
+          <span>اضافة ملصق</span>
+          <button id="close-add-sticker-tray" class="close-button">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="add-sticker-content">
+          <label for="sticker-name">اسم الملصق</label>
+          <input
+            type="text"
+            id="sticker-name"
+            placeholder="قم بكتابة اسم الملصق"
+          />
+          <label for="sticker-color">اختر اللون</label>
+          <div class="sticker-color-options">
+            <button class="sticker-color blue"></button>
+            <button class="sticker-color orange"></button>
+            <button class="sticker-color yellow"></button>
+          </div>
+          <button class="add-sticker-button">اضافة ملصق</button>
+        </div>
+      </div>
+    </main>
+    <script src="https://emoji-button.js.org/1.0.4/emoji-button.js"></script>
+    <script src="./../scripts.js"></script>
+  </body>
+</html>
