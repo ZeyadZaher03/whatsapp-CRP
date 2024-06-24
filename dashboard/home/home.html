@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../index.css" />
+    <link rel="stylesheet" href="./../../utils.css" />
+    <link rel="stylesheet" href="./../dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://emoji-button.js.org/1.0.4/emoji-button.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="dashboard">
+    <nav class="dashboard-navigation">
+      <img src="./../../assets/whatsapp.png" alt="whatsapp" />
+      <ul>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/1.png" alt="" />
+          <span>الرئيسية</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/2.png" alt="" />
+          <span>الباقات</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/3.png" alt="" />
+          <span>الاجهزة المرتبطة</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/4.png" alt="" />
+          <span>جهات الاتصال</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/5.png" alt="" />
+          <span>المجموعات</span>
+        </a>
+        <a class="dashboard-navigation--link dashboard-navigation--link-active">
+          <img src="/assets/dashboard-nav-icons/6-i.png" alt="" />
+          <span>الشات بوت</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/7.png" alt="" />
+          <span>الرسائل المجدولة</span>
+        </a>
+      </ul>
+    </nav>
+    <main class="dashboard-main">
+      <div class="top-nav">
+        <div class="nav-right">
+          <span class="nav-title">الرئيسية</span>
+        </div>
+        <div class="nav-center">
+          <input type="text" placeholder="قم بالبحث هنا" class="search-input" />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="nav-left">
+          <i class="fas fa-bell notification-icon">
+            <span class="notification-dot"></span>
+          </i>
+          <div class="user-profile">
+            <span class="user-role">عميل</span>
+            <img src="./../../assets/avatar.png" alt="User" class="user-img" />
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="card">
+          <h3>فلترة الداتا بالتواريخ</h3>
+          <div class="home-filter">
+            <div class="home-boxes--wrapper">
+              <div class="home-box">
+                <span class="home-box--title">من</span>
+                <span class="home-box--date"
+                  ><i class="fa-regular fa-calendar"></i> 2024/4/4
+                </span>
+              </div>
+              <div class="home-box">
+                <span class="home-box--title">الي</span>
+                <span class="home-box--date"
+                  ><i class="fa-regular fa-calendar"></i> 2024/4/4
+                </span>
+              </div>
+              <div class="home-box">
+                <span class="home-box--title">المدة</span>
+                <span class="home-box--date"
+                  ><i class="fa-regular fa-calendar"></i> 2024/4/4
+                </span>
+              </div>
+            </div>
+            <div class="home-filter--buttons">
+              <button class="home-filter--button">تطبيق</button>
+              <button class="home-filter--button-sec">تصدير</button>
+            </div>
+            <span class="home-filter--filter-number"
+              >حد الرسائل : 30 رسالة</span
+            >
+          </div>
+        </div>
+        <div class="card">
+          <h3>نظرة عامة</h3>
+          <div class="stats-tickets">
+            <div class="ticket">
+              <div class="stat">2</div>
+              <span>مرسلة</span>
+              <i class="fas fa-check-double"></i>
+            </div>
+            <div class="ticket">
+              <div class="stat">0</div>
+              <span>مستلمة</span>
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="ticket">
+              <div class="stat">99</div>
+              <span>مقروءة</span>
+              <i class="fas fa-eye"></i>
+            </div>
+            <div class="ticket">
+              <div class="stat">140</div>
+              <span>تم الرد عليها</span>
+              <i class="fas fa-reply"></i>
+            </div>
+            <div class="ticket">
+              <div class="stat">2</div>
+              <span>قيد الارسال</span>
+              <i class="fas fa-paper-plane"></i>
+            </div>
+            <div class="ticket">
+              <div class="stat">0</div>
+              <span>فشل الارسال</span>
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="ticket">
+              <div class="stat">99</div>
+              <span>قيد المعالجة</span>
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <div class="ticket">
+              <div class="stat">140</div>
+              <span>في قائمة الانتظار</span>
+              <i class="fas fa-hourglass-half"></i>
+            </div>
+          </div>
+        </div>
+        <div class="campaign-header-container">
+          <div class="campaign-header-title">قائمة الحملات</div>
+          <div class="campaign-search-section">
+            <span class="campaign-sorted-by">مصنفة بواسطة:</span>
+            <input
+              class="campaign-search-input"
+              type="text"
+              placeholder="بحث"
+            />
+            <input
+              class="campaign-events-input"
+              type="text"
+              placeholder="الاحداث"
+            />
+            <button class="campaign-filter-button">
+              <i class="fas fa-filter"></i>
+            </button>
+          </div>
+        </div>
+        <div class="table-container">
+          <table class="campaign-table">
+            <thead>
+              <tr>
+                <th>اسم الحملة</th>
+                <th>مؤرشفة</th>
+                <th>مجدوة</th>
+                <th>ناجحة</th>
+                <th>مرسلة</th>
+                <th>مستلمة</th>
+                <th>مردود عليها</th>
+                <th>المستقبلين</th>
+                <th>الحالة</th>
+                <th>الإجراء</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>تسويق منتج</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td class="status pending">قيد التنفيذ</td>
+                <td class="action stop">إيقاف</td>
+              </tr>
+              <tr>
+                <td>تسويق منتج</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td class="status completed">مكتملة</td>
+                <td class="action retry">إعادة</td>
+              </tr>
+              <tr>
+                <td>تسويق منتج</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td>50</td>
+                <td class="status active">فعالة</td>
+                <td class="action start">بدء الآن</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="table-empty">
+            <img src="./../../assets/empty-home.png" alt="empty list" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

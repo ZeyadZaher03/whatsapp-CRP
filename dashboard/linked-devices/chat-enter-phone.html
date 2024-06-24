@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../index.css" />
+    <link rel="stylesheet" href="./../../utils.css" />
+    <link rel="stylesheet" href="./../dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://emoji-button.js.org/1.0.4/emoji-button.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="dashboard">
+    <nav class="dashboard-navigation">
+      <img src="./../../assets/whatsapp.png" alt="whatsapp" />
+      <ul>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/1.png" alt="" />
+          <span>الرئيسية</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/2.png" alt="" />
+          <span>الباقات</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/3.png" alt="" />
+          <span>الاجهزة المرتبطة</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/4.png" alt="" />
+          <span>جهات الاتصال</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/5.png" alt="" />
+          <span>المجموعات</span>
+        </a>
+        <a class="dashboard-navigation--link dashboard-navigation--link-active">
+          <img src="/assets/dashboard-nav-icons/6-i.png" alt="" />
+          <span>الشات بوت</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/7.png" alt="" />
+          <span>الرسائل المجدولة</span>
+        </a>
+      </ul>
+    </nav>
+    <main class="dashboard-main">
+      <div class="enter_phone_number">
+        <h1 class="enter_phone_number-header">ادخل رقم الهاتف</h1>
+        <span class="enter_phone_number-sub_header"
+          >حدد رقم الدولة وادخل رقم الهاتف المسجل في الواتساب</span
+        >
+        <div class="enter_phone_number-inputs">
+          <input id="phone" class="enter_phone_number-phone" type="tel" />
+        </div>
+        <button class="enter_phone_number-next-button">التالي</button>
+        <button class="enter_phone_number-qr-code-button">
+          الربط باستخدام الرمز المربع
+        </button>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          initialCountry: "auto",
+          utilsScript:
+            "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+        });
+      });
+    </script>
+  </body>
+</html>

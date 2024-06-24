@@ -9,8 +9,9 @@
   color: #275e2c;
 }
 
+.input-box select,
 .input-box input {
-  padding: 13px;
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid #e0e5f2;
   width: 100%;

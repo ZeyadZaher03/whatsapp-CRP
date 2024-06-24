@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../index.css" />
+    <link rel="stylesheet" href="./../../utils.css" />
+    <link rel="stylesheet" href="./../dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://emoji-button.js.org/1.0.4/emoji-button.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="dashboard">
+    <nav class="dashboard-navigation">
+      <img src="./../../assets/whatsapp.png" alt="whatsapp" />
+      <ul>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/1.png" alt="" />
+          <span>الرئيسية</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/2.png" alt="" />
+          <span>الباقات</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/3.png" alt="" />
+          <span>الاجهزة المرتبطة</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/4.png" alt="" />
+          <span>جهات الاتصال</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/5.png" alt="" />
+          <span>المجموعات</span>
+        </a>
+        <a class="dashboard-navigation--link dashboard-navigation--link-active">
+          <img src="/assets/dashboard-nav-icons/6-i.png" alt="" />
+          <span>الشات بوت</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/7.png" alt="" />
+          <span>الرسائل المجدولة</span>
+        </a>
+      </ul>
+    </nav>
+    <main class="dashboard-main">
+      <div class="top-nav">
+        <div class="nav-right">
+          <span class="nav-title">المجموعات</span>
+        </div>
+        <div class="nav-center">
+          <input type="text" placeholder="قم بالبحث هنا" class="search-input" />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="nav-left">
+          <i class="fas fa-bell notification-icon">
+            <span class="notification-dot"></span>
+          </i>
+          <div class="user-profile">
+            <span class="user-role">عميل</span>
+            <img src="./../../assets/avatar.png" alt="User" class="user-img" />
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="content content-empty">
+        <img
+          src="./../../assets/not-subscribed.png"
+          width="500"
+          alt="not-subscribed"
+        />
+        <h2>انت لست مشتركا</h2>
+        <p>للوصول الي هذه الخدمة , انت بحاجه الي الاشتراك في خطة من خططنا</p>
+        <p>
+          من فضلك قم بزيارة صفحة الحجز لاختيار الخطة المناسبة والاستمتاع
+          بالفوائد
+        </p>
+        <button>قم باختيار خطة</button>
+      </div>
+    </main>
+  </body>
+</html>

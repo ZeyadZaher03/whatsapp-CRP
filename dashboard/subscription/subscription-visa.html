@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../index.css" />
+    <link rel="stylesheet" href="./../../utils.css" />
+    <link rel="stylesheet" href="./../dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://emoji-button.js.org/1.0.4/emoji-button.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body class="dashboard">
+    <nav class="dashboard-navigation">
+      <img src="./../../assets/whatsapp.png" alt="whatsapp" />
+      <ul>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/1.png" alt="" />
+          <span>الرئيسية</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/2.png" alt="" />
+          <span>الباقات</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/3.png" alt="" />
+          <span>الاجهزة المرتبطة</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/4.png" alt="" />
+          <span>جهات الاتصال</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/5.png" alt="" />
+          <span>المجموعات</span>
+        </a>
+        <a class="dashboard-navigation--link dashboard-navigation--link-active">
+          <img src="/assets/dashboard-nav-icons/6-i.png" alt="" />
+          <span>الشات بوت</span>
+        </a>
+        <a class="dashboard-navigation--link">
+          <img src="/assets/dashboard-nav-icons/7.png" alt="" />
+          <span>الرسائل المجدولة</span>
+        </a>
+      </ul>
+    </nav>
+    <main class="dashboard-main">
+      <div class="top-nav">
+        <div class="nav-right">
+          <span class="nav-title">الباقات</span>
+        </div>
+        <div class="nav-center">
+          <input type="text" placeholder="قم بالبحث هنا" class="search-input" />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+        <div class="nav-left">
+          <i class="fas fa-bell notification-icon">
+            <span class="notification-dot"></span>
+          </i>
+          <div class="user-profile">
+            <span class="user-role">عميل</span>
+            <img src="./../../assets/avatar.png" alt="User" class="user-img" />
+            <i class="fas fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="card">
+          <h3>وسيلة الدفع</h3>
+          <span>قم باختيار وسيلة الدفع المتوفرة </span>
+
+          <div class="payment-method-container">
+            <div class="payment-methods">
+              <label class="payment-method">
+                <img src="./../../assets/stripe-logo.png" alt="stripe" />
+                <input type="radio" name="payment" />
+              </label>
+              <label class="payment-method">
+                <img
+                  src="./../../assets/visa-mastercard-logo.png"
+                  alt="visa mastercard"
+                />
+                <input type="radio" name="payment" />
+              </label>
+              <label class="payment-method">
+                <img src="./../../assets/stc-pay-logo.png" alt="stc pay" />
+                <input type="radio" name="payment" />
+              </label>
+              <label class="payment-method">
+                <img src="./../../assets/apple-pay-logo.png" alt="apple pay" />
+                <input type="radio" name="payment" />
+              </label>
+            </div>
+            <button class="continue-button">متابعة</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
