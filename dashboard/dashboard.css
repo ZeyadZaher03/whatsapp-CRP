@@ -1655,6 +1655,15 @@
   background-color: #00000007;
 }
 
+.message-content--contact > span {
+  color: #007bff;
+  font-weight: 700;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* CONTACT MESSAGE END */
 
 /* VOICE MESSAGE */
@@ -1764,4 +1773,53 @@
   width: 100%;
 }
 
+/* VOICE MESSAGE ND */
+
 /* VOICE MESSAGE */
+
+/* FILE MESSAGE */
+.chat-message.file {
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message.file .message-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.chat-message.file .message-content a {
+  text-decoration: underline;
+}
+
+.chat-message.file .download-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #0e0e0e;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.chat-message.file .download-icon:hover {
+  color: #007bff;
+}
+
+.file-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  background-color: #00000007;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.file-size-name {
+  font-size: 10px;
+}
+/* FILE MESSAGE END */
